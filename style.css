@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  position: fixed;
+  
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.wholecontainer{
+    display: flex;
+
+    
+    
+    width: 100%;
+
+}
+.maincontainer{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logindetails{
+  font-family: 'arial';
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+    background-color: rgb(255, 255, 255);
+    
+    width: 400px;
+    height: 500px;
+    h1{
+      font-weight: 10;
+    }
+    h4{
+      margin-bottom: 10px;
+      color: #5c5c5c;
+    }
+
+    
+    .forgotpass{
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+      & label{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10PX;
+        input{
+          width: 20px;
+
+
+        }
+       
+      }
+      
+    }
+    input {
+      width: 380px;
+      padding: 10px;
+      height: 30px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signin {
+      width: 100%;
+      padding: 15px;
+      background-color: #5a3d91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      
+      margin: 10px 0;
+    }
+    .google {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      width: 100%;
+      padding: 15px;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border: 2px solid rgb(195, 195, 195);
+      border-radius: 5px;
+      
+      margin: 10px 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    
+    .account{
+      display: flex;
+      justify-content: center;
+      #dont{
+        color: rgb(149, 149, 149);
+      }
+      
+    }
+    
+    
+}
+
+.imgcontainer{
+  width:50%;
+  background-color: #9b7cd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
