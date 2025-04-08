@@ -5,61 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="header">
-        <img src="icon.png" width="20">
-        <h1>TheCubeFactory</h1>
+    
+    <div class="maincontainer">
+
+        <div class="leftcontainer">
+                <div id="shadowbox">
+
+                </div>
     </div>
-    
-      <div class="wholecontainer">
-                <div class="maincontainer">
-                    <div class="logindetails">
-                        <h1>Welcome back</h1>
-                        <h4>please enter your details</h4>
-
-                        
-                            <label for="emailaddress">Email address <br> <input type="text"  class="emailaddress" /></label>
-                            <label for="pass">Passward <br> <input type="password"  class="pass" /></label>
-                        
-
-                        
-                            
-                        
-
-                        <div class="forgotpass">
-                            <label><input type="checkbox" /> Remember for 30 days </label>
-                            <a href="@#">Forgot password</a>
-                        </div>
-
-                        <button class="signin">Sign in</button>
-                        <button class="google"><img src="Google-Symbol.png" width="30">Sign in with Google</button>
-
-                        <div class="account">
-                            <a id="dont"    href="@#"> Don't have an account?</a>
-                            <a href="@#">Sign up</a>
-                        </div>    
-                    </div>
-
-
-
-
-
+        
+        <div class="rightcontainer">
+        <div id="contorls">
+            <div class="iputlibrary">
+                <label>Offset</label>
+                <input id="offset" type="range" input="offset"  min="1" max="100" value="10">
+                <div class="valuebox">
+                    <p id="offsetvalue"></p>
                 </div>
+            </div>
 
-                <div class="imgcontainer">
-                    <img src="high_res_image.png" width="100%">
-                    
+
+            <div class="iputlibrary">
+                <label>light offset Color</label>
+                <input id="lightoffsetcolorset" type="color" input="Color"   value="#ffffff">
+                <div class="valueboxcolor">
+                    <p id="lightoffsetcolorvalue"></p>
                 </div>
-    
-    </div>   
-    
+            </div>
 
-  
+            <div class="iputlibrary">
+                <label>Darkt offset Color</label>
+                <input id="darktoffsetcolorset" type="color" input="Color"   value="#ffffff">
+                <div class="valueboxcolor">
+                    <p id="Darktoffsetcolorvalue"></p>
+                </div>
+            </div>
+            
 
 
+
+
+            <div class="iputlibrary">
+                <label>Blur</label>
+                <input id="blurset" type="range" input="blurset"  min="1" max="100" value="10">
+                <div class="valuebox">
+                    <p id="blurvalue"></p>
+                </div>
+            </div>
+            
+
+
+            <div class="iputlibrary">
+                <label>Background Color</label>
+                <input id="backgroundcolorset" type="color" input="Color"   value="#4d4d4d">
+                <div class="valueboxcolor">
+                    <p id="backgroundcolorvalue"></p>
+                </div>
+            </div>
+
+
+            <div class="iputlibrary">
+                <label>Height</label>
+                <input id="heightset" type="range" input="size" min="1" max="1000" value="200">
+                <div class="valuebox">
+                    <p id="heightvalue"></p>
+                </div>
+            </div>
+
+
+            <div class="iputlibrary">
+                <label>Width</label>
+                <input id="widthset" type="range" input="size" min="1" max="1000" value="200">
+                <div class="valuebox">
+                    <p id="widthvalue"></p>
+                </div>
+            </div>
+
+
+
+            <div class="iputlibrary">
+                <label>Border-radius</label>
+                <input id="radiusset" type="range" input="size" min="1" max="100" value="1">
+                <div class="valuebox">
+                    <p id="radiusvalue"></p>
+                </div>
+            </div>
+
+
+            <div class="iputlibrary">
+                <label>Add Text</label>
+                <input id="textset" type="text" input="text" placeholder="Add Something">
+                
+            </div>
+
+
+
+
+            <div class="iputlibrary">
+                <label>Font Color</label>
+                <input id="fontcolorset" type="color" input="Color"   value="#000000">
+                <div class="valueboxcolor">
+                    <p id="fontcolorvalue"></p>
+                </div>
+            </div>
+
+
+            <div class="iputlibrary">
+                <label>Font Size</label>
+                <input id="fontsizeset" type="range" input="size" min="1" max="1000" value="200">
+                <div class="valuebox">
+                    <p id="fontsizevalue"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="cssbox" >
+         <div class="header"></div>   
+        
+        <p > box-shadow:<span id="cssboxvalue"></span></p>
+        
+
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+
+
+
+
+
+    </div>
 
 </body>
 </html>
