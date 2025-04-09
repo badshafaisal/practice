@@ -10,19 +10,61 @@
 </head>
 <body>
     
-    <div class="maincontainer">
-
+    <div class="maincontainer" id="maincontainer">
+        <h1>Neumorphsm Generator</h1>
         <div class="leftcontainer">
+            
+            <button id="btn" onclick="actionbtn()">Hide Controler</button>
+
+            
+            <div class="sizecontroler" id="sizecontroler">
+                
+            <div class="sizelibrary">
+                <label>Height</label>
+                <input id="heightset" type="range" input="size" min="5" max="500" value="200">
+                <div class="valuebox">
+                    <p id="heightvalue"></p>
+                </div>
+            </div>
+
+
+            <div class="sizelibrary">
+                <label>Width</label>
+                <input id="widthset" type="range" input="size" min="5" max="500" value="200">
+                <div class="valuebox">
+                    <p id="widthvalue"></p>
+                </div>
+            </div>
+
+            <div class="sizelibrary">
+                <label>Border-radius</label>
+                <input id="radiusset" type="range" input="size" min="0" max="100" value="10">
+                <div class="valuebox">
+                    <p id="radiusvalue"></p>
+                </div>
+            </div>
+
+            <div class="sizelibrary">
+                <label>Background Color</label>
+                <input id="backgroundcolorset" type="color" input="Color"   value="#ffc7c7"  >
+                <div class="valueboxcolor">
+                    <p id="backgroundcolorvalue"></p>
+                </div>
+            </div>
+
+
+        </div>
                 <div id="shadowbox">
 
                 </div>
     </div>
         
         <div class="rightcontainer">
+            
         <div id="contorls">
             <div class="iputlibrary">
                 <label>Offset</label>
-                <input id="offset" type="range" input="offset"  min="1" max="100" value="10">
+                <input id="offset" type="range" input="offset"  min="1" max="100" value="5">
                 <div class="valuebox">
                     <p id="offsetvalue"></p>
                 </div>
@@ -39,16 +81,11 @@
 
             <div class="iputlibrary">
                 <label>Darkt offset Color</label>
-                <input id="darktoffsetcolorset" type="color" input="Color"   value="#ffffff">
+                <input id="darktoffsetcolorset" type="color" input="Color"   value="gray"> 
                 <div class="valueboxcolor">
                     <p id="Darktoffsetcolorvalue"></p>
                 </div>
             </div>
-            
-
-
-
-
             <div class="iputlibrary">
                 <label>Blur</label>
                 <input id="blurset" type="range" input="blurset"  min="1" max="100" value="10">
@@ -57,57 +94,14 @@
                 </div>
             </div>
             
-
-
-            <div class="iputlibrary">
-                <label>Background Color</label>
-                <input id="backgroundcolorset" type="color" input="Color"   value="#4d4d4d">
-                <div class="valueboxcolor">
-                    <p id="backgroundcolorvalue"></p>
-                </div>
-            </div>
-
-
-            <div class="iputlibrary">
-                <label>Height</label>
-                <input id="heightset" type="range" input="size" min="1" max="1000" value="200">
-                <div class="valuebox">
-                    <p id="heightvalue"></p>
-                </div>
-            </div>
-
-
-            <div class="iputlibrary">
-                <label>Width</label>
-                <input id="widthset" type="range" input="size" min="1" max="1000" value="200">
-                <div class="valuebox">
-                    <p id="widthvalue"></p>
-                </div>
-            </div>
-
-
-
-            <div class="iputlibrary">
-                <label>Border-radius</label>
-                <input id="radiusset" type="range" input="size" min="1" max="100" value="1">
-                <div class="valuebox">
-                    <p id="radiusvalue"></p>
-                </div>
-            </div>
-
-
             <div class="iputlibrary">
                 <label>Add Text</label>
                 <input id="textset" type="text" input="text" placeholder="Add Something">
                 
             </div>
-
-
-
-
             <div class="iputlibrary">
                 <label>Font Color</label>
-                <input id="fontcolorset" type="color" input="Color"   value="#000000">
+                <input id="fontcolorset" type="color" input="Color" >
                 <div class="valueboxcolor">
                     <p id="fontcolorvalue"></p>
                 </div>
@@ -116,34 +110,30 @@
 
             <div class="iputlibrary">
                 <label>Font Size</label>
-                <input id="fontsizeset" type="range" input="size" min="1" max="1000" value="200">
+                <input id="fontsizeset" type="range" input="size" min="0" max="1000" value="0">
                 <div class="valuebox">
                     <p id="fontsizevalue"></p>
                 </div>
             </div>
 
         </div>
-
-
-
-
-
-        <div class="cssbox" >
-         <div class="header"></div>   
-        
-        <p > box-shadow:<span id="cssboxvalue"></span></p>
-        
-
-
+        <div class="cssbox" id="cssshadow">
+         <div class="header">
+            <p># style.css</p>
+         </div>
+         <div class="spancontainer"> 
+        <span class="attribute" id="fontsize-attribute"> font-size:<span id="css-fontsize-value"></span></span>
+        <span class="attribute" id="radius-attribute"> color:<span id="css-color-value"></span></span>
+        <span class="attribute" id="radius-attribute"> border-radius:<span id="css-radius-value"></span></span>
+        <span class="attribute" id="width-attribute"> width:<span id="css-width-value"></span></span>
+        <span class="attribute" id="height-attribute"> height:<span id="css-height-value"></span></span>
+        <span class="attribute" id="backgroundcolor-attribute"> background-color:<span id="css-backgroundcolor-value"></span></span>
+        <span class="attribute"> box-shadow:<span id="cssboxvalue"></span></span>
+    </div>  
         </div>
     </div>
 
 <script src="script.js"></script>
-
-
-
-
-
 
     </div>
 
